@@ -1,0 +1,109 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="location.js"></script>
+<script src="app.js"></script>
+</head>
+<body onload="getLocation()">
+<svg   id="panel1" width="330" height="600" x="10" y="45" style="background:rgb(217,217,214);margin-top: 45px;" >
+
+</svg>    
+
+<svg id="panel2" width="330" height="600" x="370" y="45" style="background:rgb(254,216,177);margin-top: 45px;"  >
+   
+</svg>
+
+<svg  id="panel3" width="330" height="600" x="730" y="45" style="background:rgb(197,139,231);margin-top: 45px;"  >
+</svg>
+
+<svg  id="panel4" width="330" height="600" x="1090" y="45" style="background:rgb(144,238,144);margin-top: 45px;" >
+</svg>
+
+<div id="location"></div>
+<div class="overall_box" style="top: 45px !important;">
+
+<div id="panel1" class="panel" ondrop="drop(event)" ondragover="allowDrop(event)" style="width: 330px;height:600px;background:rgb(217,217,214);">
+    <span class="span" draggable="false"> Backlog - <span>3</span></span>
+    <div draggable="true" ondragstart="drag(event)" id="box1" class="inner_task_box">
+        <div class="content">
+        <span style="color: grey;font-weight:bolder">L2A - 4</span>
+        <div>User - Edit Profile</div>
+        <div class="divider"></div>
+        <div class="last">Author Blogs</div>
+    </div>
+
+    </div>
+    <div draggable="true" ondragstart="drag(event)" id="box2" class="inner_task_box">
+        <div class="content">
+            <span style="color: grey;font-weight:bolder">L2A - 5</span>
+            <div>User - Create Article</div>
+            <div class="divider"></div>
+            <div class="last">Author Blogs</div>
+        </div>
+
+    </div>
+    <div draggable="true" ondragstart="drag(event)" id="box3" class="inner_task_box">
+        <div class="content">
+            <span style="color: grey;font-weight:bolder">L2A - 6</span>
+            <div>User - Edit my Article</div>
+            <div class="divider"></div>
+            <div class="last">Author Blogs</div>
+        </div>
+    </div>
+</div>
+<div id="panel2" ondrop="drop(event)" class="panel" ondragover="allowDrop(event)" style="width: 330px;height:600px;background:rgb(254,216,177);">
+    <span class="span" draggable="false"> Selected for Dev - <span>1</span></span>
+    <div draggable="true" ondragstart="drag(event)" id="box4" class="inner_task_box">
+        <div class="content">
+            <span style="color: goldenrod;font-weight:bolder">L2A - 3</span>
+            <div>Admin - Block User Account</div>
+            <div class="divider"></div>
+            <div class="last">User Management</div>
+        </div>
+    </div>
+    <!-- <div draggable="true" ondragstart="drag(event)" id="box5" class="inner_task_box">
+        <div class="content">
+            <span style="color: goldenrod;font-weight:bolder">L2A - 4</span>
+            <div>User - Edit Profile</div>
+            <div class="divider"></div>
+            <div class="last">Author Blogs</div>
+        </div>
+    </div> -->
+</div>
+<div id="panel3" ondrop="drop(event)" class="panel" ondragover="allowDrop(event)"  style="width: 330px;height:600px;background:rgb(197,139,231);">
+    <span class="span" draggable="false"> In Progress - <span>2</span></span>
+    <div draggable="true" ondragstart="drag(event)" id="box6" class="inner_task_box">
+        <div class="content">
+            <span style="color: purple;font-weight:bolder">L2A - 1</span>
+            <div>Admin- List Users</div>
+            <div class="divider"></div>
+            <div class="last">User Management</div>
+        </div>
+    </div>
+    <div draggable="true" ondragstart="drag(event)" id="box7" class="inner_task_box">
+        <div class="content">
+            <span style="color: purple;font-weight:bolder">L2A - 2</span>
+            <div>Admin - Approve User Accont</div>
+            <div class="divider"></div>
+            <div class="last">User Management</div>
+        </div>
+    </div>
+</div>
+<div id="panel4" ondrop="drop(event)" class="panel" ondragover="allowDrop(event)"  style="width: 330px;height:600px;background:rgb(144,238,144);">
+    <span class="span" draggable="false">Done - <span>0</span></span>
+    <!-- <div draggable="true" ondragstart="drag(event)" id="box8" class="inner_task_box">
+        <div class="content">
+            <span style="color: goldenrod;font-weight:bolder">L2A - 4</span>
+            <div>User - Edit Profile</div>
+            <div class="divider"></div>
+            <div class="last">Author Blogs</div>
+        </div>
+    </div> -->
+</div>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+.overall_box {
+  display: flex;
+  gap: 4px;
+  position: absolute;
+  top: 0px;
+  /* background: cornflowerblue; */
+  z-index: 1000;
+}
+
+.inner_task_box {
+  width: 300px;
+  height: 150px;
+  background-color: white;
+  margin: auto;
+  margin-top: 10px;
+  box-shadow: 0px 0px 10px grey;
+  cursor: pointer;
+}
+
+.span {
+  border: 1px solid grey;
+  margin-top: 10px;
+  padding: 5px;
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 3px grey;
+}
+
+#location {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: #11beda;
+  color: white;
+  padding: 7px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px grey;
+}
+
+.divider {
+  width: 125%;
+  height: 1.4px;
+  background: grey;
+  margin-left: -30px;
+}
+
+.content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.last {
+  margin-top: 20px;
+  display: grid;
+  place-content: center;
+}
